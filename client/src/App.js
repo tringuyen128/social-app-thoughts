@@ -10,9 +10,11 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 
+//absolute path for production *important*
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 })
+
 //create prop
 const client = new ApolloClient({
   link: httpLink,
