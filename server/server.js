@@ -32,7 +32,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')))
   }
-  //wildcard GET route for server
+  //wildcard '*' GET route for server
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'))
   })
