@@ -1,6 +1,7 @@
 :root {
   --primary: #497573;
-  --secondary: #99f7f2;
+  /* --secondary: #99f7f2; */
+  --secondary: #4267b2;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
@@ -115,10 +116,14 @@ nav a:hover {
   margin: 5px 0;
   border-radius: var(--border-radius);
   border: none;
-  color: var(--dark);
+  color: white;
   outline: none;
   background-color: var(--secondary);
   transition: all 0.5s;
+}
+.pill {
+  background-color: var(--light);
+  color: gray;
 }
 
 .btn:hover,
@@ -141,7 +146,7 @@ nav a:hover {
 }
 
 .card-header {
-  color: var(--secondary);
+  color: white;
   margin: 0;
   background-color: var(--dark);
   padding: 0.625rem;
@@ -737,6 +742,7 @@ nav a:hover {
 
 .text-center {
   text-align: center;
+  color: white;
 }
 
 .text-justify {
@@ -752,7 +758,7 @@ nav a:hover {
 }
 
 .text-secondary {
-  color: var(--secondary);
+  color: white;
 }
 
 .text-tertiary {
@@ -768,7 +774,7 @@ nav a:hover {
 }
 
 .text-dark {
-  color: var(--dark);
+  color: white;
 }
 
 .text-error {
@@ -782,6 +788,7 @@ nav a:hover {
 
 .bg-secondary {
   background-color: var(--secondary);
+  color: white;
 }
 
 .bg-tertiary {
