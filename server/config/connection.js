@@ -9,9 +9,3 @@ mongoose.connect(
 )
 
 module.exports = mongoose.connection
-
-
-
-//
-tri128
-
